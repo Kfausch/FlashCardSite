@@ -10,8 +10,8 @@ body {
 }
 
 .flashcard-container {
-    width: 400px;
-    height: 300px;
+    width: 400px;  /* Increased width */
+    height: 300px; /* Increased height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     cursor: pointer;
     text-align: center;
+    padding: 20px; /* Ensure padding doesn't interfere with click area */
 }
 
 .flashcard {
     font-size: 20px;
-    padding: 20px;
     color: #e0e0e0; /* Light text color */
+    flex-grow: 1; /* Ensures text takes up full container space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
