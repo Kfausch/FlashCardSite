@@ -7,9 +7,14 @@ fetch('definitions.txt')
     .then(data => {
         terms = data.split('\n').map(line => {
             const parts = line.split(' - ');
-            return { term: parts[0].trim(), definition: parts[1].trim() };
-        });
+            if (parts.length === 2) {  // Ensure there's a term and a definition
+                return { term: parts[0].trim(), definition: parts[1].trim() };
+            }
+        }).filter(item => item !== undefined); // Filter out any undefined entries
         displayTerm();
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
     });
 
 document.getElementById('flashcard').addEventListener('click', () => {
@@ -23,12 +28,16 @@ document.getElementById('flashcard').addEventListener('click', () => {
 
 function displayTerm() {
     const flashcard = document.getElementById('flashcard');
-    flashcard.textContent = terms[currentIndex].term;
-    showDefinition = false;
+    if (terms[currentIndex]) {  // Ensure the current term exists
+        flashcard.textContent = terms[currentIndex].term;
+        showDefinition = false;
+    }
 }
 
 function displayDefinition() {
     const flashcard = document.getElementById('flashcard');
-    flashcard.textContent = terms[currentIndex].definition;
-    showDefinition = true;
+    if (terms[currentIndex]) {  // Ensure the current term exists
+        flashcard.textContent = terms[currentIndex].definition;
+        showDefinition = true;
+    }
 }
