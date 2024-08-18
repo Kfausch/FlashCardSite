@@ -5,7 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
 }
 
 .flashcard-container {
@@ -14,10 +15,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #333; /* Darker border */
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     cursor: pointer;
     text-align: center;
 }
@@ -25,4 +26,5 @@ body {
 .flashcard {
     font-size: 20px;
     padding: 20px;
+    color: #e0e0e0; /* Light text color */
 }
