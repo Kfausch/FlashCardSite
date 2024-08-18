@@ -17,7 +17,7 @@ fetch('definitions.txt')
         console.error('There was a problem with the fetch operation:', error);
     });
 
-document.getElementById('.flashcard-container').addEventListener('click', () => {
+document.querySelector('.flashcard-container').addEventListener('click', () => {
     if (showDefinition) {
         currentIndex = (currentIndex + 1) % terms.length;
         displayTerm();
@@ -25,6 +25,7 @@ document.getElementById('.flashcard-container').addEventListener('click', () => 
         displayDefinition();
     }
 });
+
 
 function displayTerm() {
     const flashcard = document.getElementById('flashcard');
