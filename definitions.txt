@@ -1,19 +1,19 @@
 ARP Poisoning - A type of cyber attack in which an attacker sends falsified ARP (Address Resolution Protocol) messages over a local area network, leading to the linking of an attacker's MAC address with the IP address of a legitimate computer or server.
 Virtual Private Network (VPN) - A technology that creates a secure, encrypted connection over a less secure network, such as the internet, to protect data transmission.
-Closed-Circuit Television (CCTV) - A physical security control that uses video cameras to transmit a signal to a specific place on a limited set of monitors.
-Challenge-Handshake Authentication Protocol (CHAP) - An authentication protocol that uses a challenge-response mechanism to authenticate a user, providing more security than PAP (Password Authentication Protocol).
+Closed Circuit Television (CCTV) - A physical security control that uses video cameras to transmit a signal to a specific place on a limited set of monitors.
+Challenge Handshake Authentication Protocol (CHAP) - An authentication protocol that uses a challenge-response mechanism to authenticate a user, providing more security than PAP (Password Authentication Protocol).
 Pharming - A cyber attack that redirects a website's traffic to a fraudulent website without the user’s consent.
 Advanced Encryption Standard (AES) - A symmetric encryption algorithm widely used across the globe to secure data transmission.
 Spyware - A type of malicious software designed to gather information from a user's device without their knowledge and send it to another entity.
 Social Engineering - A technique used by attackers to manipulate individuals into divulging confidential information, often by pretending to be a trustworthy entity.
-Zero-Day Vulnerability - A software vulnerability that is unknown to the vendor and can be exploited by attackers before a patch is issued.
+Zero Day Vulnerability - A software vulnerability that is unknown to the vendor and can be exploited by attackers before a patch is issued.
 Demilitarized Zone (DMZ) - A physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, typically the internet, while keeping the internal network secure.
 Intrusion Detection System (IDS) - A system that monitors network or system activities for malicious activities or policy violations and produces reports to a management station.
 Account Lockout Policy - A security measure designed to prevent unauthorized access to a system by locking an account after a specified number of incorrect password attempts.
 Strong Password - A password that is difficult to guess or crack, typically consisting of a mix of letters, numbers, and special characters, and avoiding common words.
 Honeypot - A decoy system set up to attract attackers and analyze their activities in order to improve security defenses.
 Principle of Least Privilege - The practice of limiting access rights for users to the bare minimum permissions they need to perform their work.
-Man-in-the-Middle (MitM) Attack - An attack where the attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
+Man in the Middle (MitM) Attack - An attack where the attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
 Logical Access Control - Security measures that restrict access to computer systems and data, such as passwords or PINs.
 Hybrid Cloud - A computing environment that uses a mix of on-premises, private cloud, and third-party, public cloud services with orchestration between the platforms.
 Firewall - A network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
@@ -22,7 +22,7 @@ Encryption - The process of converting information or data into a code, especial
 Data Breach - An incident where information is accessed or disclosed without authorization, leading to potential harm or loss.
 NIST Cybersecurity Framework - A voluntary framework that provides a policy framework of computer security guidance for how private sector organizations can assess and improve their ability to prevent, detect, and respond to cyber attacks.
 Penetration Testing - A simulated cyber attack against your computer system to check for exploitable vulnerabilities.
-Multi-Factor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
+Multi Factor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
 Denial of Service (DoS) Attack - An attack meant to shut down a machine or network, making it inaccessible to its intended users by overwhelming it with a flood of internet traffic.
 Patch Management - The process of managing a network of computers by regularly performing system updates to fix vulnerabilities and improve performance.
 Sandbox - A security mechanism for separating running programs, often used to execute untested code or untrusted programs from unverified third parties, suppliers, or untrusted users.
@@ -31,7 +31,7 @@ Security Awareness Training - Training provided to employees to educate them on 
 Technical Control - Security controls that are implemented and managed through technology, such as firewalls, antivirus software, and encryption.
 Data Integrity - The maintenance of, and the assurance of the accuracy and consistency of, data over its entire life-cycle.
 Digital Certificate - An electronic document used to prove the ownership of a public key, which includes the public key itself and information about the key's owner.
-Cross-Site Scripting (XSS) - A type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.
+Cross Site Scripting (XSS) - A type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.
 Incident Response Plan - A documented, structured approach with instructions for responding to and managing security incidents, such as data breaches, cyberattacks, and service outages.
 Separation of Duties - A security principle that ensures no single individual has control over all aspects of any critical transaction, thereby reducing the risk of fraud and errors.
 Worm - A type of malware that replicates itself and spreads to other computers without needing to attach itself to a host program.
@@ -76,15 +76,15 @@ Administrative Control - Policies, procedures, and guidelines that are implement
 Cold Site - A disaster recovery site that is essentially an empty data center with necessary infrastructure, but no running technology, requiring significant time to be made operational.
 Privilege Escalation - The act of exploiting a vulnerability to gain elevated access to resources that are normally protected from an application or user.
 Network Access Control (NAC) - A security solution that controls access to a network based on predefined security policies, ensuring that only compliant and authorized devices can connect.
-Brute-Force Attack - An attempt to crack a password, encryption key, or username by systematically trying all possible combinations until the correct one is found.
+Brute Force Attack - An attempt to crack a password, encryption key, or username by systematically trying all possible combinations until the correct one is found.
 OSI Model - A conceptual framework used to understand network interactions in seven layers, from physical (hardware) to application (end-user interface).
 Preventive Control - Security measures that are designed to stop security incidents from occurring, such as firewalls, anti-virus software, and physical security measures.
-Wi-Fi Protected Access 3 (WPA3) - The latest security protocol developed by the Wi-Fi Alliance to secure wireless networks, offering stronger data protection and better resistance to brute-force attacks.
+WiFi Protected Access 3 (WPA3) - The latest security protocol developed by the Wi-Fi Alliance to secure wireless networks, offering stronger data protection and better resistance to brute-force attacks.
 Sandboxing - A security technique in which a program or file is run in an isolated environment to analyze its behavior without affecting the rest of the system.
 Insider Threat - A security risk that originates from within the targeted organization, typically involving current or former employees who have inside information.
 SSL/TLS Certificate - A digital certificate that authenticates the identity of a website and encrypts the data being sent to and from the server using Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
 Trojan Horse - Malicious software that misleads users of its true intent, often appearing as legitimate software to trick users into installing it.
-Multi-Factor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify a user’s identity.
+MultiFactor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify a user’s identity.
 Worm - A type of malware that can replicate itself and spread across networks, without needing to attach to a host file.
 Pharming - A cyber attack intended to redirect a website's traffic to another, fake site by exploiting vulnerabilities in the Domain Name System (DNS).
 Cybersecurity Risk Assessment - The process of identifying, evaluating, and prioritizing risks to organizational operations, assets, individuals, and other organizations.
