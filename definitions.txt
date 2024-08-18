@@ -1,0 +1,2 @@
+Ransomware - A type of attack in which the malicious actor encrypts your data and holds it ransom, demanding payment to decrypt it.
+Spoofing - The act of disguising a communication from an unknown source as being from a known, trusted source.
