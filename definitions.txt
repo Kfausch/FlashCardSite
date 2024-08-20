@@ -1,100 +1,215 @@
-ARP Poisoning - A type of cyber attack in which an attacker sends falsified ARP (Address Resolution Protocol) messages over a local area network, leading to the linking of an attacker's MAC address with the IP address of a legitimate computer or server.
-Virtual Private Network (VPN) - A technology that creates a secure, encrypted connection over a less secure network, such as the internet, to protect data transmission.
-Closed Circuit Television (CCTV) - A physical security control that uses video cameras to transmit a signal to a specific place on a limited set of monitors.
-Challenge Handshake Authentication Protocol (CHAP) - An authentication protocol that uses a challenge-response mechanism to authenticate a user, providing more security than PAP (Password Authentication Protocol).
-Pharming - A cyber attack that redirects a website's traffic to a fraudulent website without the user’s consent.
-Advanced Encryption Standard (AES) - A symmetric encryption algorithm widely used across the globe to secure data transmission.
-Spyware - A type of malicious software designed to gather information from a user's device without their knowledge and send it to another entity.
-Social Engineering - A technique used by attackers to manipulate individuals into divulging confidential information, often by pretending to be a trustworthy entity.
-Zero Day Vulnerability - A software vulnerability that is unknown to the vendor and can be exploited by attackers before a patch is issued.
-Demilitarized Zone (DMZ) - A physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network, typically the internet, while keeping the internal network secure.
-Intrusion Detection System (IDS) - A system that monitors network or system activities for malicious activities or policy violations and produces reports to a management station.
+.cer - the file extension for an X.509 certificate that is stored in a binary file
+Acceptance - Acknowledging a risk but taking no steps to address it
+Access Control List (ACL) - A list of permissions attached to an object that specifies which users or system processes can access the object and what operations they can perform.
 Account Lockout Policy - A security measure designed to prevent unauthorized access to a system by locking an account after a specified number of incorrect password attempts.
-Strong Password - A password that is difficult to guess or crack, typically consisting of a mix of letters, numbers, and special characters, and avoiding common words.
-Honeypot - A decoy system set up to attract attackers and analyze their activities in order to improve security defenses.
-Principle of Least Privilege - The practice of limiting access rights for users to the bare minimum permissions they need to perform their work.
-Man in the Middle (MitM) Attack - An attack where the attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
-Logical Access Control - Security measures that restrict access to computer systems and data, such as passwords or PINs.
-Hybrid Cloud - A computing environment that uses a mix of on-premises, private cloud, and third-party, public cloud services with orchestration between the platforms.
-Firewall - A network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
-Secure Shell (SSH) - A protocol that provides a secure channel over an unsecured network, often used for secure remote login and other secure network services.
-Encryption - The process of converting information or data into a code, especially to prevent unauthorized access.
-Data Breach - An incident where information is accessed or disclosed without authorization, leading to potential harm or loss.
-NIST Cybersecurity Framework - A voluntary framework that provides a policy framework of computer security guidance for how private sector organizations can assess and improve their ability to prevent, detect, and respond to cyber attacks.
-Penetration Testing - A simulated cyber attack against your computer system to check for exploitable vulnerabilities.
-Multi Factor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
-Denial of Service (DoS) Attack - An attack meant to shut down a machine or network, making it inaccessible to its intended users by overwhelming it with a flood of internet traffic.
-Patch Management - The process of managing a network of computers by regularly performing system updates to fix vulnerabilities and improve performance.
-Sandbox - A security mechanism for separating running programs, often used to execute untested code or untrusted programs from unverified third parties, suppliers, or untrusted users.
-Secure/Multipurpose Internet Mail Extensions (S/MIME) - A standard for public key encryption and signing of MIME data that is often used to secure email communications.
-Security Awareness Training - Training provided to employees to educate them on the importance of security and to ensure they follow best practices to protect sensitive information.
-Technical Control - Security controls that are implemented and managed through technology, such as firewalls, antivirus software, and encryption.
-Data Integrity - The maintenance of, and the assurance of the accuracy and consistency of, data over its entire life-cycle.
-Digital Certificate - An electronic document used to prove the ownership of a public key, which includes the public key itself and information about the key's owner.
-Cross Site Scripting (XSS) - A type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.
-Incident Response Plan - A documented, structured approach with instructions for responding to and managing security incidents, such as data breaches, cyberattacks, and service outages.
-Separation of Duties - A security principle that ensures no single individual has control over all aspects of any critical transaction, thereby reducing the risk of fraud and errors.
-Worm - A type of malware that replicates itself and spreads to other computers without needing to attach itself to a host program.
-Security Audit - A systematic evaluation of the security of a company's information system by measuring how well it conforms to a set of established criteria.
-Public Key Infrastructure (PKI) - A framework that manages public-key encryption by providing digital certificates that can authenticate the identity of individuals and organizations over the internet.
-Spoofing - The act of disguising a communication from an unknown source as being from a known, trusted source.
-Security Information and Event Management (SIEM) - A solution that provides real-time analysis of security alerts generated by applications and network hardware.
-Logic Bomb - A piece of code intentionally inserted into a software system that will set off a malicious function when specified conditions are met.
-Network Segmentation - The practice of splitting a computer network into subnetworks, each being a network segment, as a means to improve performance and security.
-Phishing - A method of social engineering where attackers send fraudulent communications that appear to come from a reputable source, often to steal sensitive data.
-Vulnerability Scanner - A computer program designed to assess computers, systems, and networks for known weaknesses.
-Preventive Control - Security measures designed to prevent unauthorized or unwanted activities from occurring.
-Availability (CIA Triad) - The assurance that systems and data are accessible and usable upon demand by an authorized user.
-Spear Phishing - A more targeted form of phishing, where attackers direct their deceitful communications at specific individuals or organizations.
-Web Application Firewall (WAF) - A security solution that monitors, filters, and blocks data packets as they travel to and from a web application.
-Whitelisting - The practice of allowing only pre-approved applications, emails, IP addresses, or websites to enter or execute in a system while blocking all others.
-Buffer Overflow - A vulnerability that occurs when an attacker sends more data to a buffer than it can hold, allowing them to overwrite adjacent memory and execute arbitrary code.
-Digital Forensics - The process of uncovering and interpreting electronic data for use in a court of law, focusing on preserving and analyzing digital evidence.
-Ransomware - A type of malware that encrypts the user's files and demands a ransom to restore access to the data.
-Shadow IT - The use of information technology systems, devices, software, applications, and services without explicit IT department approval.
-Honeynet - A network set up with intentional vulnerabilities; its purpose is to invite attack, so that the attacker's methods can be studied and used to strengthen defenses.
-Botnet - A network of private computers infected with malicious software and controlled as a group without the owners' knowledge, often used to send spam or launch distributed denial-of-service attacks.
-Security Operations Center (SOC) - A centralized unit that deals with security issues on an organizational and technical level, providing 24/7 monitoring and response to security incidents.
-Phishing Attack - A cyber attack that uses disguised email as a weapon to trick the email recipient into believing that the message is something they want or need, such as a request from their bank.
-Security Information and Event Management (SIEM) System - A system that aggregates, normalizes, and analyzes data from various security tools, allowing real-time monitoring, threat detection, and incident response.
-Tailgating - A physical security breach in which an unauthorized person follows an authorized individual into a secured area.
-SQL Injection - A code injection technique that might destroy your database by allowing attackers to execute arbitrary SQL code on a database by manipulating input fields in a web application.
-Whaling - A type of phishing attack that specifically targets high-profile individuals, such as executives or other prominent figures, to steal sensitive information.
-Smurf Attack - A type of distributed denial-of-service attack in which large numbers of ICMP (ping) requests are sent to network hosts, often overwhelming them.
-Ransomware - Malicious software that locks the user out of their data or threatens to publish it unless a ransom is paid.
-Patch Management - The process of distributing and applying updates to software to fix vulnerabilities and improve functionality.
-Data Loss Prevention (DLP) - A set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users.
-DNS Security Extensions (DNSSEC) - A suite of extensions to DNS that provides authentication of DNS data, helping to protect against attacks such as DNS spoofing.
-Defense in Depth - A security strategy that uses multiple layers of defense to protect information and systems, reducing the chances of a successful attack.
-Load Balancer - A device that distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed.
-Deterrent Control - Security measures designed to discourage individuals from violating security policies, such as the presence of security guards or warning signs.
-Air Gap - A security measure that involves isolating a computer or network from other systems, typically to protect it from unauthorized access or data leakage.
-Data Minimization - The principle that data collected should be limited to what is directly relevant and necessary to accomplish a specific purpose, often used in compliance with privacy regulations like GDPR.
-Unified Threat Management (UTM) - An all-in-one security solution that includes features like firewall, intrusion detection and prevention, antivirus, content filtering, and spam filtering in a single appliance.
-Demilitarized Zone (DMZ) - A network segment that acts as a buffer zone between a secure internal network and an untrusted external network, usually containing public-facing services like web servers.
+Accounting - A record that is preserved of who accessed the network, what resources they accessed, and when they disconnected from the network
 Administrative Control - Policies, procedures, and guidelines that are implemented by an organization to manage and control its risk posture.
-Cold Site - A disaster recovery site that is essentially an empty data center with necessary infrastructure, but no running technology, requiring significant time to be made operational.
-Privilege Escalation - The act of exploiting a vulnerability to gain elevated access to resources that are normally protected from an application or user.
-Network Access Control (NAC) - A security solution that controls access to a network based on predefined security policies, ensuring that only compliant and authorized devices can connect.
-Brute Force Attack - An attempt to crack a password, encryption key, or username by systematically trying all possible combinations until the correct one is found.
-OSI Model - A conceptual framework used to understand network interactions in seven layers, from physical (hardware) to application (end-user interface).
-Preventive Control - Security measures that are designed to stop security incidents from occurring, such as firewalls, anti-virus software, and physical security measures.
-WiFi Protected Access 3 (WPA3) - The latest security protocol developed by the Wi-Fi Alliance to secure wireless networks, offering stronger data protection and better resistance to brute-force attacks.
-Sandboxing - A security technique in which a program or file is run in an isolated environment to analyze its behavior without affecting the rest of the system.
-Insider Threat - A security risk that originates from within the targeted organization, typically involving current or former employees who have inside information.
-SSL/TLS Certificate - A digital certificate that authenticates the identity of a website and encrypts the data being sent to and from the server using Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
-Trojan Horse - Malicious software that misleads users of its true intent, often appearing as legitimate software to trick users into installing it.
-MultiFactor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify a user’s identity.
-Worm - A type of malware that can replicate itself and spread across networks, without needing to attach to a host file.
-Pharming - A cyber attack intended to redirect a website's traffic to another, fake site by exploiting vulnerabilities in the Domain Name System (DNS).
-Cybersecurity Risk Assessment - The process of identifying, evaluating, and prioritizing risks to organizational operations, assets, individuals, and other organizations.
-Honeypot - A decoy system or network that is set up to attract and trap attackers in order to study their behavior and improve security measures.
+Advanced Encryption Standard (AES) - A symmetric encryption algorithm adopted as an encryption standard by the U.S. government to protect classified information and data tramission.
+Air Gap - A security measure that involves isolating a computer or network from other systems, typically to protect it from unauthorized access or data leakage.
+Algorithm - consists of procedures based on a mathematical formula used to encrypt and decrypt the data, also called a cipher
+Antivirus Software - A program or set of programs that are designed to prevent, search for, detect, and remove software viruses, and other malicious software like worms, trojans, adware, and more.
+Application Programming Interface (API) Security - The protection of the integrity of APIs—both the ones you own and the ones you use—from malicious attack.
+ARP Poisoning - A type of cyber attack in which an attacker sends falsified ARP (Address Resolution Protocol) messages over a local area network, leading to the linking of an attacker's MAC address with the IP address of a legitimate computer or server.
+Asymmetric Encryption - An encryption method that uses a pair of keys, a public key for encryption and a private key for decryption.
+Attribute Based Access Control (ABAC) - An access control paradigm whereby access rights are granted to users through the use of policies which combine attributes together.
+Authentication - proving that a user is genuine and not an imposter
+Authorization - Granting permission to take an action
 Availability (CIA Triad) - A principle of information security that ensures that information is available when needed by authorized individuals.
+Backdoor - Malware that give access to a computer program or service that circumvents any normal security protections
 Backup Solution - A technology or process that copies and stores data so it may be used to restore the original after a data loss event.
-SSL/TLS for Email Encryption - Using Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols to encrypt email communications, ensuring data is transmitted securely over the internet.
-Zero Trust - A security model that assumes no user, device, or network inside or outside the organization's perimeter is trusted, and requires strict identity verification for every person and device attempting to access resources.
-Need to Know - A principle of data security that restricts access to information to only those individuals who need it to perform their job duties.
+Biometrics - Physical or behavioral human characteristics to digitally identify a person to grant access to systems, devices, or data.
+Blacklisting - A security measure that blocks certain entities from access, based on a predefined list of entities that are denied access.
+Blockchain - a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network
+Bot - An infected computer placed under the remote control of an attacker for the purpose of launching attacks
+Botnet - A network of private computers infected with malicious software and controlled as a group without the owners' knowledge, often used to send spam or launch distributed denial of service attacks.
+Brute Force Attack - An attempt to crack a password, encryption key, or username by systematically trying all possible combinations until the correct one is found.
+Buffer Overflow - A vulnerability that occurs when an attacker sends more data to a buffer than it can hold, allowing them to overwrite adjacent memory and execute arbitrary code.
+Bug Bounty - A monetary reward for finding a vulnerability 
+Business Continuity Planning (BCP) - The process involved in creating a system of prevention and recovery from potential threats to a company.
+Captive Portal Access Point - An infrastructure on public access WLANs that uses a standard web browser to provide information, and gives the wireless user the opportunity to agree to a policy or present valid login credentials to provide higher degree of security
+Certificate authority - the entity that is responsible for digital certificates 
+Certificate Authority (CA) - An entity that issues digital certificates for use by other parties. It is an example of a trusted third party.
+Certificate chaining - linking several certificates together to establish trust between all the certificates involved
+Chain of Custody - A process that shows evidence was always under strict control and no unauthorized person was given the opportunity the to corrupt the evidence
+Chain of Custody - The chronological documentation or paper trail, showing the seizure, custody, control, transfer, analysis, and disposition of physical or electronic evidence.
+Challenge Handshake Authentication Protocol (CHAP) - An authentication protocol that uses a challenge response mechanism to authenticate a user, providing more security than PAP (Password Authentication Protocol).
+Change Management - A systematic approach to dealing with the transition or transformation of an organization's goals, processes, or technologies.
+Closed Circuit Television (CCTV) - A physical security control that uses video cameras to transmit a signal to a specific place on a limited set of monitors.
+Cloud Access Security Broker (CASB) - Software that sits between cloud service users and cloud applications to monitor all activity and enforce security policies.
+Cloud Security - A broad set of policies, technologies, applications, and controls utilized to protect virtualized IP, data, applications, services, and the associated infrastructure of cloud computing.
+Code signing digital certificate - certificate used by software developers to digitally sign a program to prove that the software comes from the entity that signed it and that no unauthorized third party has altered it
+Cold Site - A disaster recovery site that is essentially an empty data center with necessary infrastructure, but no running technology, requiring significant time to be made operational.
+Common Vulnerabilities and Exposure (CVE) - A tool that identifies vulnerabilities in operating systems and application software
+Common Vulnerability Scoring System (CVSS) - A numeric rating system of the impact of a vulnerability
+Controller AP - An AP (access point) that is managed through a dedicated wireless LAN controller WLC
+Cross Site Request Forgery (CSRF) - An attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
+Cross Site Scripting (XSS) - A security vulnerability typically found in web applications that allows attackers to inject client side scripts into web pages viewed by other users.
+Cryptography - The practice and study of techniques for securing communication and data in the presence of adversaries.
+Cryptomalware - Malware that encrypts all the files on the device so that none of them can be opened until a ransom is paid
+Cybersecurity Risk Assessment - The process of identifying, evaluating, and prioritizing risks to organizational operations, assets, individuals, and other organizations.
+Data Breach - A security incident in which information is accessed without authorization.
+Data Breach - An incident where information is accessed or disclosed without authorization, leading to potential harm or loss.
+Data custodian/steward - An individual to whom day to day actions have been assigned by the owner
+Data Encryption Standard (DES) - A previously ubiquitous symmetric key algorithm for the encryption of electronic data that has since been deemed insecure for many applications.
+Data has three states - rest, processing, transit
+Data Integrity - The maintenance of, and the assurance of the accuracy and consistency of, data over its entire life cycle.
+Data Loss Prevention (DLP) - A set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users.
+Data Minimization - The principle that data collected should be limited to what is directly relevant and necessary to accomplish a specific purpose, often used in compliance with privacy regulations like GDPR.
+Data Owner - The person responsible for the data
+Data Sovereignty - The concept that digital data is subject to the laws of the country in which it is located.
+DDoS - distributed denial of service, attack from several devices to floor and overwhelm a network that halts real traffic 
+Defense in Depth - A security strategy that uses multiple layers of defense to protect information and systems, reducing the chances of a successful attack.
+Demilitarized Zone (DMZ) - A physical or logical subnetwork that contains and exposes an organization's external facing services to an untrusted network, typically the internet, while keeping the internal network secure.
+Denial of Service (DoS) - An attack meant to shut down a machine or network, making it inaccessible to its intended users by overwhelming it with traffic.
+Deterrent Control - Security measures designed to discourage individuals from violating security policies, such as the presence of security guards or warning signs.
+Diamond model of intrusion analysis - A framework for examining network intrusion events that uses four core interconnected elements that comprise any event.
+Dictionary Attack - a password attack that creates encrypted versions of common dictionary words and compares them against those in a stolen password file
+Digital Certificate - A digital document used to prove the ownership of a public key. The certificate includes information about the key, identity of the owner, and the digital signature of an entity that has verified the certificate's contents.
+Digital Forensics - The process of uncovering and interpreting electronic data for use in a court of law, focusing on preserving and analyzing digital evidence.
+Digital Signature - A mathematical scheme for verifying the authenticity of digital messages or documents.
+Directory Service - A software application, or a set of applications, that stores and organizes information about a computer network's users and network resources and that allows network administrators to manage users' access to the resources.
+Disassociation Attack - A wireless attack in which false deauthentication or disassociation frames are sent to an AP that appear to come from another client device, causing the client to disconnect
+Disaster Recovery (DR) - A set of policies, tools, and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human induced disaster.
+Distributed Denial of Service (DDoS) - A type of attack where multiple compromised systems are used to target a single system causing a Denial of Service (DoS) attack.
+DNS Security Extensions (DNSSEC) - A suite of extensions to DNS that provides authentication of DNS data, helping to protect against attacks such as DNS spoofing.
+Domain Name System Security Extensions (DNSSEC) - A suite of Internet Engineering Task Force (IETF) specifications for securing certain kinds of information provided by the Domain Name System (DNS) as used on Internet Protocol (IP) networks.
+E discovery - Identifying, collection, and producing electronically stored information (ESI) in response to a request in an investigation or lawsuit
+Email Filtering - The process of organizing email according to specified criteria. It typically refers to the automatic processing of incoming messages, but the term also applies to the intervention of human intelligence in addition to anti spam techniques.
+Encryption - The process of converting information or data into a code, especially to prevent unauthorized access.
+Endpoint Security - The approach to network security that requires each computing device on a network to comply with certain standards before network access is granted.
+Evil Twin - An AP set up by an attacker to mimic an authorized AP and capture transmissions, so a user's device will unknowingly connect to the evil twin instead
+Federation - Single Sign On for networks owned by different organizations, also called federated identity management (FIM)
+Fileless Virus - A type of malware that takes advantage of native services and processes that are part of the OS to avoid detection and carry out its attack
+Firewall - A network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+Firewall Rules - The set of criteria that a network packet must meet to be allowed through or blocked by the firewall.
+Forensic Analysis - The process of collecting, preserving, analyzing, and presenting data in a way that is legally admissible.
+General Data Protection Regulation (GDPR) - A regulation regarding data protection and privacy in the European Union and the European Economic Area (EEA)
+Generic account - An account not tied to a specific person
+Hardware Security Module (HSM) - A physical computing device that safeguards and manages digital keys for strong authentication and provides cryptoprocessing.
+Hash - algorithm that create a unique digital fingerprint
+Hashing - A function that converts an input (or 'message') into a fixed size string of bytes, typically a digest that is unique to each unique input.
+Honeynet - A network set up with intentional vulnerabilities; its purpose is to invite attack, so that the attacker's methods can be studied and used to strengthen defenses.
+Honeypot - A decoy system or network that is set up to attract and trap attackers in order to study their behavior and improve security measures.
+Hybrid Cloud - A computing environment that uses a mix of on premises, private cloud, and third party, public cloud services with orchestration between the platforms.
+Identity and Access Management (IAM) - A framework of policies and technologies for ensuring that the proper people in an enterprise have the appropriate access to technology resources.
+Identity Provider (IdP) - A system entity that provides digital identities to end users or devices looking to interact with other systems.
+IEEE 802.1x - A standard, originally developed for wired networks, that provides a greater degree of security by implementing port based authentication
+Incident Management - The process by which an organization handles a data breach or cyberattack, including the way the organization attempts to manage the consequences of the attack or breach.
+Incident Response - A methodology for handling security breaches or cyberattacks, including identifying, containing, eradicating, and recovering from incidents.
+Incident Response Plan - A documented, structured approach with instructions for responding to and managing security incidents, such as data breaches, cyberattacks, and service outages.
+Insider Threat - A security risk that originates from within the targeted organization, typically involving current or former employees who have inside information.
+Intermediate Certificate Authority - An entity that processes the CSR and verifies the authenticity of the user on behalf of a certificate authority (CA)
+Intrusion Detection System (IDS) - A system that monitors network or system activities for malicious activities or policy violations and produces reports to a management station.
 Intrusion Prevention System (IPS) - A security device that monitors network and system activities for malicious activity, logging information, attempting to block the activity, and reporting it.
-Spyware - Malicious software designed to secretly monitor the user's activity and collect personal information without their knowledge or consent.
-Vulnerability Assessment - The process of identifying, quantifying, and prioritizing the vulnerabilities in a system, typically as part of a broader security audit or risk assessment.
+Kerberos - A network authentication protocol designed to provide strong authentication for client/server applications by using secret key cryptography.
+Lightweight Directory Access Protocol (LDAP) - An open, vendor neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.
+Load Balancer - A device that distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed.
+Logic Bomb - A piece of code intentionally inserted into a software system that will set off a malicious function when specified conditions are met.
+Logical Access Control - Security measures that restrict access to computer systems and data, such as passwords or PINs.
+Malware - Malicious software that enters a computer system without the user's knowledge or consent and then performs an unwanted and harmful action
+Man in the Middle (MitM) Attack - An attack where the attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
+Mitigation - Addressing a risk by making the risk less serious
+Mobile Device Management (MDM) - A type of security software used by an IT department to monitor, manage, and secure employees' mobile devices that are deployed across multiple mobile service providers and across multiple mobile operating systems being used in the organization.
+Multi Factor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
+Multifactor Authentication (MFA) - A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
+Need to Know - A principle of data security that restricts access to information to only those individuals who need it to perform their job duties.
+Network Access Control (NAC) - A security solution that controls access to a network based on predefined security policies, ensuring that only compliant and authorized devices can connect.
+Network Address Translation (NAT) - A method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
+Network Segmentation - The practice of splitting a computer network into subnetworks, each being a network segment. Advantages include reducing congestion and improving security.
+NIST Cybersecurity Framework - A voluntary framework that provides a policy framework of computer security guidance for how private sector organizations can assess and improve their ability to prevent, detect, and respond to cyber attacks.
+NIST Risk Management Framework - A guidance document designed to help organizations assess and manage risk to their information systems
+Nonrepudiation - process of proving a user performed an action
+OAuth - An open standard for access delegation commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.
+Open Source Intelligence (OSINT) - Framework focused on gathering information from free tools or resources
+OpenID Connect - A simple identity layer on top of the OAuth 2.0 protocol, which allows clients to verify the identity of the end user based on the authentication performed by an authorization server, as well as to obtain basic profile information about the end user.
+Order of Volatility - The specific order in which evidence from an incident should be examined
+OSI Model - A conceptual framework used to understand network interactions in seven layers, from physical (hardware) to application (end user interface).
+Password Spraying  - An attack that uses one or a small number of commonly used passwords when trying to log in to several different user accounts
+Patch Management - The process of distributing and applying updates to software to fix vulnerabilities and improve functionality.
+Penetration Test Report - The document that outlines the findings, methodologies, and recommendations from a penetration test.
+Penetration Testing - The practice of testing a computer system, network, or web application to find security vulnerabilities that an attacker could exploit.
+Personally identifiable information (PII) - Data that could potentially identify a specific individual
+Pharming - A cyber attack intended to redirect a website's traffic to another, fake site by exploiting vulnerabilities in the Domain Name System (DNS).
+Phishing - The fraudulent attempt to obtain sensitive information or data, such as usernames, passwords, and credit card details, by disguising oneself as a trustworthy entity in an electronic communication.
+Phishing Attack - A cyber attack that uses disguised email as a weapon to trick the email recipient into believing that the message is something they want or need, such as a request from their bank.
+Post quantum cryptography - cryptographic algorithms that are secure against an attack by a quantum computer
+Preshared Key (PSK)- The Authentication model used in WPA that requires a secret key value to be entered into the AP and all approved wireless devices prior to communicating
+Preventive Control - Security measures that are designed to stop security incidents from occurring, such as firewalls, anti virus software, and physical security measures.
+Principle of Least Privilege - The practice of limiting access rights for users to the bare minimum permissions they need to perform their work.
+Privilege Escalation - The act of exploiting a vulnerability to gain elevated access to resources that are normally protected from an application or user.
+Public Key Infrastructure (PKI) - A framework that manages public key encryption by providing digital certificates that can authenticate the identity of individuals and organizations over the internet.
+Ransomware - A type of malware that encrypts the user's files and demands a ransom to restore access to the data.
+Remote Access Trojan (RAT) - Malware that injects a computer like a Trojan but also gives the threat agent unauthorized remote access to the victim's computer by using specially configured communication protocols
+Resource vs Security constraint - a limitation in providing strong cryptography due to the tug of war between available resources (time and energy) and the security provided by cryptography 
+Retention policy - Part of an incident response plan that outlines how long the evidence of the incident should be retained
+Risk - The potential for loss, damage, or destruction of an asset as a result of a threat exploiting a vulnerability.
+Risk Assessment - The process of identifying, analyzing, and evaluating risk. It helps to ensure that the cybersecurity controls you choose are appropriate to the risks your organization faces.
+Risk awareness - Raising of understanding of what risks exist, their potential impacts, and how they are managed
+Role Based Access Control (RBAC) - An approach to restricting system access to authorized users based on their role within an organization and has become one of the main methods for advanced access control.
+Rouge AP - An unauthorized AP that allows an attacker to bypass many network security configurations and opens the network and its users to attacks
+Sandbox - A security mechanism for separating running programs, often used to execute untested code or untrusted programs from unverified third parties, suppliers, or untrusted users.
+Secure Configuration - The administrative and technical controls that are implemented on information technology products to minimize security vulnerabilities and protect the integrity of the software and data.
+Secure File Transfer Protocol (SFTP) - A network protocol that provides file access, file transfer, and file management over any reliable data stream.
+Secure Shell (SSH) - A protocol that provides a secure channel over an unsecured network, often used for secure remote login and other secure network services.
+Secure Sockets Layer (SSL)/Transport Layer Security (TLS) - Cryptographic protocols designed to provide communications security over a computer network.
+Secure/Multipurpose Internet Mail Extensions (S/MIME) - A standard for public key encryption and signing of MIME data that is often used to secure email communications.
+Security Assertion Markup Language (SAML) - An open standard that allows identity providers to pass authorization credentials to service providers. It's used for single sign on (SSO) logins.
+Security Audit - A systematic evaluation of the security of a company's information system by measuring how well it conforms to a set of established criteria.
+Security Awareness Training - Training provided to employees to educate them on the importance of security and to ensure they follow best practices to protect sensitive information.
+Security Information and Event Management (SIEM) System - A system that aggregates, normalizes, and analyzes data from various security tools, allowing real time monitoring, threat detection, and incident response.
+Security Information Management (SIM) - The practice of collecting, monitoring, and analyzing security related data from computer logs.
+Security Operations Center (SOC) - A centralized unit that deals with security issues on an organizational and technical level, providing 24/7 monitoring and response to security incidents.
+Security Orchestration, automation, and response (SOAR) - A tool designed to help security teams manage and respond to the very high number of security warnings and alarms by combining comprehensive data gathering and analytics in order to automate incident response
+Security Policy - A document that outlines the rules, guidelines, and practices a company follows to ensure the privacy and security of data and resources.
+Security Posture - The overall security status of a software environment or organization, including the security services implemented and the ability to manage defenses against security breaches.
 Security Through Obscurity - A security principle that relies on secrecy as the main method of providing security, such as hiding system details, configurations, and vulnerabilities.
+Self signed - A signed digital certificate that does not depend upon any higher level authority for authentication
+Separation of Duties - A security principle that ensures no single individual has control over all aspects of any critical transaction, thereby reducing the risk of fraud and errors.
+Service account - A user account that is created explicitly to provide a security context for services running on a server.
+Service Level Agreement (SLA) - A contract between a service provider and its customers that documents what services the provider will furnish and defines the service standards the provider is obligated to meet.
+Session Hijacking - The exploitation of a valid computer session—sometimes also called a session key—to gain unauthorized access to information or services in a computer system.
+Shadow IT - The use of information technology systems, devices, software, applications, and services without explicit IT department approval.
+Simple Mail Transfer Protocol (SMTP) - Security Protocols for securing email transmissions over the Internet, including methods like SMTPS.
+Skimming - a process in which a threat actor attaches a small device that fits inside a card reader to capture information
+Smurf Attack - A type of distributed denial of service attack in which large numbers of ICMP (ping) requests are sent to network hosts, often overwhelming them.
+Social Engineering - A technique used by attackers to manipulate individuals into divulging confidential information, often by pretending to be a trustworthy entity.
+Software Defined Networking (SDN) - An approach to networking that uses software based controllers or application programming interfaces (APIs) to direct traffic on the network and communicate with the underlying hardware infrastructure.
+Something you are - authentication based on the features and characteristics of the individual
+Something you have - authentication based on the approved user having a specific item in his or her possession
+Something you know - Authentication base on something the user knows but no one else knows
+Spear Phishing - A more targeted form of phishing where the attacker knows some information about the victim and uses this to personalize the attack.
+Spoofing - The act of disguising a communication from an unknown source as being from a known, trusted source.
+Spyware - A type of malicious software designed to gather information from a user's device without their knowledge and send it to another entity.
+SQL Injection - A code injection technique that might destroy your database by allowing attackers to execute arbitrary SQL code on a database by manipulating input fields in a web application.
+SSL/TLS Certificate - A digital certificate that authenticates the identity of a website and encrypts the data being sent to and from the server using Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
+SSL/TLS for Email Encryption - Using Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols to encrypt email communications, ensuring data is transmitted securely over the internet.
+Steganography - hiding existence of data within another type of file, such as an image
+Strong Password - A password that is difficult to guess or crack, typically consisting of a mix of letters, numbers, and special characters, and avoiding common words.
+Symmetric Encryption - An encryption method where the same key is used for both encryption and decryption of data.
+Tailgating - A physical security breach in which an unauthorized person follows an authorized individual into a secured area.
+Technical Control - Security controls that are implemented and managed through technology, such as firewalls, antivirus software, and encryption.
+Threat Actor - An individual or group that performs an action that could potentially cause harm to an information system or organization.
+Threat Hunting - The proactive search for "malicious, suspicious, or risky activity that has not been detected by existing tools."
+Threat Intelligence - Evidence based knowledge, including context, mechanisms, indicators, implications, and actionable advice, about an existing or emerging menace or hazard to assets.
+Transference - Transferring the responsibility of a risk to a third party
+Transport Layer Security (TLS) - A protocol that ensures privacy between communicating applications and their users on the Internet.
+Trojan - An executable program that masquerades as performing a benign activity but also does something malicious
+Trusted Platform Module (TPM) - a chip on the motherboard of the computer that provides cryptographic services
+Two Factor Authentication (2FA) - A security process in which the user provides two different authentication factors to verify themselves to better protect both the user's credentials and the resources the user can access.
+Unified Threat Management (UTM) - An all in one security solution that includes features like firewall, intrusion detection and prevention, antivirus, content filtering, and spam filtering in a single appliance.
+Virtual Private Network (VPN) - A technology that creates a secure, encrypted connection over a less secure network, such as the internet, to protect data transmission.
+Virtualization Security - The collective measures, procedures, and processes that ensure the protection of a virtualization infrastructure/environment.
+Virus - A type of malware that, when executed, replicates by inserting copies of itself into other computer programs, data files, or the boot sector of the hard drive.
+VPN (Virtual Private Network) - A service that allows you to connect to the internet via a server run by a VPN provider. All data traveling between your computer, phone, or tablet, and this "VPN server" is securely encrypted.
+Vulnerability - A weakness in a system or its design that could be exploited by a threat actor to perform unauthorized actions within a computer system.
+Vulnerability Assessment - The process of identifying, quantifying, and prioritizing the vulnerabilities in a system, typically as part of a broader security audit or risk assessment.
+Vulnerability Scanning - The automated process of proactively identifying security vulnerabilities of computing systems in a network to determine if and where a system can be exploited and/or threatened.
+Web Application Firewall (WAF) - A specific form of application firewall that filters, monitors, and blocks HTTP traffic to and from a web application to protect against malicious attempts to compromise the system or exfiltrate data.
+Whaling - A type of phishing attack that specifically targets high profile individuals, such as executives or other prominent figures, to steal sensitive information.
+Whitelisting - The practice of allowing only pre approved applications, emails, IP addresses, or websites to enter or execute in a system while blocking all others.
+WiFi Protected Access 2 (WPA2) - The second generation of WPA security from the WiFi Alliance that addresses authentication and encryption on WLANs and is currently the most secure model for WiFi security
+WiFi Protected Access 3 (WPA3) - The latest security protocol developed by the WiFi Alliance to secure wireless networks, offering stronger data protection and better resistance to brute force attacks.
+Wireless Security - The prevention of unauthorized access or damage to computers using wireless networks.
+Worm - A type of malware that replicates itself and spreads to other computers without needing to attach itself to a host program.
+Zero Day Vulnerability - A software vulnerability that is unknown to the vendor and can be exploited by attackers before a patch is issued.
+Zero Trust Security Model - A security concept centered on the belief that organizations should not automatically trust anything inside or outside its perimeters and instead must verify anything and everything trying to connect to its systems before granting access.
