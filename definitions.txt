@@ -8,7 +8,7 @@ Advanced Encryption Standard (AES) - A symmetric encryption algorithm adopted as
 Air Gap - A security measure that involves isolating a computer or network from other systems, typically to protect it from unauthorized access or data leakage.
 Algorithm - consists of procedures based on a mathematical formula used to encrypt and decrypt the data, also called a cipher
 Antivirus Software - A program or set of programs that are designed to prevent, search for, detect, and remove software viruses, and other malicious software like worms, trojans, adware, and more.
-Application Programming Interface (API) Security - The protection of the integrity of APIs—both the ones you own and the ones you use—from malicious attack.
+Application Programming Interface (API) Security - The protection of the integrity of APIs both the ones you own and the ones you use from malicious attack.
 ARP Poisoning - A type of cyber attack in which an attacker sends falsified ARP (Address Resolution Protocol) messages over a local area network, leading to the linking of an attacker's MAC address with the IP address of a legitimate computer or server.
 Asymmetric Encryption - An encryption method that uses a pair of keys, a public key for encryption and a private key for decryption.
 Attribute Based Access Control (ABAC) - An access control paradigm whereby access rights are granted to users through the use of policies which combine attributes together.
