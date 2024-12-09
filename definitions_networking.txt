@@ -1,2 +1,250 @@
-networking - definitions
-networking2 - definitions2
+OSI Model - A conceptual framework with seven layers that standardize the functions of a telecommunication or computing system without regard to its underlying internal structure and technology.
+TCP/IP Model - A four-layer network model that outlines the core protocols of the internet, defining how data should be packetized, addressed, transmitted, routed, and received.
+Ethernet - A family of networking technologies for local area networks (LANs), defined by IEEE 802.3, that specify physical and data link layer functions.
+MAC Address - A unique 48-bit hardware address assigned to a network interface card (NIC) for communications at the data link layer.
+IP Address - A numerical identifier assigned to each device on a network that uses the Internet Protocol for communication.
+IPv4 - The fourth version of the Internet Protocol, utilizing 32-bit addresses typically written in dotted-decimal notation.
+IPv6 - The successor to IPv4, using 128-bit addresses represented in hexadecimal, designed to solve IPv4 address exhaustion.
+Subnet Mask - A 32-bit number paired with an IPv4 address that indicates which portion of the address refers to the network and which part refers to the host.
+Default Gateway - A router interface on a local network that serves as an access point or IP router that a networked computer uses to send information to another network.
+DNS (Domain Name System) - A system that translates human-readable domain names into corresponding IP addresses.
+DHCP (Dynamic Host Configuration Protocol) - A protocol that automatically assigns IP addresses and network configuration parameters to devices, simplifying administration.
+ARP (Address Resolution Protocol) - A protocol used to map an IP address to a MAC address on a local network segment.
+Router - A network device that directs data packets between different networks, determining the best path for data to travel.
+Switch - A layer 2 network device that filters and forwards frames based on MAC addresses, reducing collisions and improving performance.
+Hub - A legacy network device that repeats incoming signals to all ports, operating at the physical layer and creating a single collision domain.
+Bridge - A data link layer device that connects and filters traffic between two network segments, reducing collisions by segmenting the network.
+VLAN (Virtual Local Area Network) - A logical segmentation of a LAN into separate broadcast domains, regardless of physical location.
+Trunking - A method of transmitting multiple VLAN traffic over a single physical link using VLAN tagging protocols such as IEEE 802.1Q.
+VTP (VLAN Trunking Protocol) - A Cisco protocol that manages VLAN configuration consistency across a network of interconnected switches.
+STP (Spanning Tree Protocol) - A protocol that prevents layer 2 loops by identifying and blocking redundant paths, ensuring a loop-free topology.
+RSTP (Rapid Spanning Tree Protocol) - An enhancement of STP providing faster convergence times when changes occur in the network topology.
+EtherChannel - A technology that groups multiple Ethernet links into one logical link to increase bandwidth and provide redundancy.
+Port Security - A switch feature that limits the number of MAC addresses learned on a port, enhancing security by preventing unauthorized devices.
+Access Port - A switch port that carries traffic for a single VLAN without tagging the frames.
+Trunk Port - A switch port configured to carry multiple VLAN traffic, tagging frames with VLAN identifiers.
+Frame - A data link layer container that encapsulates packets, including source/destination MAC addresses and error-checking information.
+Packet - A network layer data unit that includes source/destination IP addresses and other routing information.
+Segment - A transport layer data unit (TCP segment or UDP datagram) that includes source/destination port numbers and control flags.
+PDU (Protocol Data Unit) - A generic term for a unit of data at each layer of the OSI model, such as frames, packets, and segments.
+MTU (Maximum Transmission Unit) - The largest size of a frame or packet that can be sent across a specific medium.
+LAN (Local Area Network) - A network that spans a relatively small area, such as a home, office, or campus.
+WAN (Wide Area Network) - A network that covers a broad area, connecting multiple LANs over long distances.
+MAN (Metropolitan Area Network) - A network designed to interconnect users in a geographic area larger than a LAN but smaller than a WAN, such as a city.
+PAN (Personal Area Network) - A very small network used for communication between personal devices within a short range.
+VPN (Virtual Private Network) - A secure, encrypted connection over a public network that acts as a private network for secure communication.
+MPLS (Multiprotocol Label Switching) - A technique that directs and carries data using short path labels rather than long network addresses.
+QoS (Quality of Service) - Techniques to manage network traffic by prioritizing certain types of data for improved performance.
+ACL (Access Control List) - A set of rules on a router or switch interface that controls which traffic is allowed or denied.
+NAT (Network Address Translation) - A process of modifying IP address information in packet headers while in transit, typically used to map private IPs to public IPs.
+PAT (Port Address Translation) - A type of NAT that maps multiple private IP addresses to a single public IP address by using different source ports.
+CIDR (Classless Inter-Domain Routing) - A method of assigning IP addresses without strict class boundaries, allowing more flexible subnetting.
+OSPF (Open Shortest Path First) - A link-state routing protocol that constructs a complete view of the network topology to determine the shortest path.
+EIGRP (Enhanced Interior Gateway Routing Protocol) - A Cisco proprietary hybrid routing protocol that uses DUAL to determine efficient routing.
+BGP (Border Gateway Protocol) - The exterior gateway protocol that exchanges routing information between autonomous systems on the internet.
+RIP (Routing Information Protocol) - A distance-vector routing protocol that uses hop count as a metric and sends updates every 30 seconds.
+Metric - A value used by routing protocols to determine the best or shortest path to a destination network.
+Administrative Distance - A numerical value assigned to routing information sources, indicating their trustworthiness.
+Routing Table - A database in a router that stores routes to various network destinations and associated metrics.
+CAM Table (Content Addressable Memory Table) - A switch table mapping MAC addresses to corresponding switch ports for efficient forwarding.
+CSU/DSU (Channel Service Unit/Data Service Unit) - A device that converts digital signals from a router to a format acceptable by a WAN service provider.
+T1 Line - A dedicated digital circuit providing 1.544 Mbps bandwidth, commonly used for internet and voice services.
+Serial Connection - A WAN communication method that transmits data bits sequentially over a single communication channel.
+RJ45 Connector - An 8-pin modular connector commonly used for twisted-pair Ethernet networking cables.
+UTP (Unshielded Twisted Pair) - A common Ethernet cable type consisting of twisted-wire pairs without additional shielding.
+STP Cable (Shielded Twisted Pair) - A twisted-pair cable that includes shielding to reduce electromagnetic interference.
+Fiber Optic Cable - A cable that transmits data as light pulses through glass or plastic fibers, providing high speed and long-distance links.
+Full-Duplex - A communication mode where data transmission can occur simultaneously in both directions.
+Half-Duplex - A communication mode where data can flow in both directions, but not at the same time.
+Collision Domain - A network segment where data packets can collide if multiple devices try to transmit at the same time.
+Broadcast Domain - A network segment in which a broadcast frame sent by one device is received by all other devices.
+Broadcast Storm - An excessive amount of broadcast traffic that can overwhelm network devices and degrade performance.
+Multicast - A communication method where a single source sends data to a group of interested receivers.
+Unicast - A one-to-one communication mode where data is sent from a single source to a single destination.
+Anycast - A method of addressing where data is routed to the nearest or best destination among multiple possible receivers.
+NTP (Network Time Protocol) - A protocol that synchronizes the clocks of computers and network devices over networks.
+SNMP (Simple Network Management Protocol) - A protocol used for collecting and organizing information about managed devices on IP networks.
+Syslog - A standard for message logging that allows network devices to send event notification messages to a central server.
+SSH (Secure Shell) - A protocol for securely accessing and managing network devices over an encrypted channel.
+Telnet - An older, insecure protocol for remote terminal access to network devices, replaced by SSH for security.
+TFTP (Trivial File Transfer Protocol) - A simple, unsecured protocol for transferring small files, often used in network booting.
+FTP (File Transfer Protocol) - A standard protocol used to transfer files between a client and a server over a TCP/IP network.
+HTTP (Hypertext Transfer Protocol) - The foundation of data communication on the World Wide Web, transferring web pages and content.
+HTTPS (HTTP Secure) - An encrypted version of HTTP using TLS/SSL to secure communication between a web server and a client.
+TLS/SSL (Transport Layer Security / Secure Sockets Layer) - Protocols that provide authentication, privacy, and data integrity between two communicating computer applications.
+VoIP (Voice over IP) - A technology that delivers voice communications and multimedia sessions over IP networks.
+RTP (Real-time Transport Protocol) - A protocol for delivering audio and video over IP networks in real-time applications.
+CDP (Cisco Discovery Protocol) - A Cisco proprietary layer 2 protocol that discovers and shares information about directly connected Cisco devices.
+LLDP (Link Layer Discovery Protocol) - A vendor-neutral protocol used by network devices to advertise their identity and capabilities.
+PoE (Power over Ethernet) - A technology that enables Ethernet cables to deliver electrical power to networked devices, like IP phones or cameras.
+WLC (Wireless LAN Controller) - A device that centralizes control of multiple wireless access points for simplified configuration and management.
+SSID (Service Set Identifier) - A unique identifier (name) that distinguishes one wireless network from another.
+WPA2 (Wi-Fi Protected Access 2) - A strong wireless security standard based on the IEEE 802.11i amendment, using AES encryption.
+WEP (Wired Equivalent Privacy) - An older, easily compromised wireless security algorithm that has been largely replaced by WPA/WPA2.
+RADIUS (Remote Authentication Dial-In User Service) - A protocol used for AAA (Authentication, Authorization, Accounting) of users connecting to network services.
+TACACS+ (Terminal Access Controller Access-Control System Plus) - A Cisco proprietary protocol providing AAA services with better separation of authentication and authorization.
+AAA (Authentication, Authorization, Accounting) - A framework for controlling user access, enforcing policies, and auditing usage.
+Route Summarization - The process of combining multiple contiguous network routes into a single, more general route advertisement.
+Gateway of Last Resort - A default route that a router uses to forward packets when no other known route exists for a given destination.
+Split Horizon - A routing technique preventing loops by not advertising a route back out the interface from which it was learned.
+Poison Reverse - A technique used in distance-vector routing protocols to prevent routing loops by advertising a failed route with an infinite metric.
+Link Aggregation (LACP) - A method (IEEE 802.3ad) for combining multiple network links into a single logical link for redundancy and increased bandwidth.
+VRF (Virtual Routing and Forwarding) - A technology that allows multiple virtual routing tables to co-exist on the same router, effectively segmenting networks.
+APIPA (Automatic Private IP Addressing) - A feature that assigns a random IP address from 169.254.x.x if no DHCP server is available.
+HSRP (Hot Standby Router Protocol) - A Cisco protocol that provides router redundancy, enabling a backup router to take over if the primary fails.
+GLBP (Gateway Load Balancing Protocol) - A Cisco protocol that offers load balancing and redundancy for default gateways in a network.
+VRRP (Virtual Router Redundancy Protocol) - A non-proprietary redundancy protocol that allows multiple routers to share a virtual IP address as a default gateway.
+SLAAC (Stateless Address Autoconfiguration) - An IPv6 feature that allows devices to self-assign an IP address without the need for a DHCP server.
+IPv6 Link-Local Address - An IPv6 address automatically configured on each interface, used for communication within the local network segment only.
+IPv6 Global Unicast Address - A globally unique IPv6 address that is routable over the internet, analogous to a public IPv4 address.
+Dual Stack - A configuration that allows devices and networks to run both IPv4 and IPv6 protocols simultaneously during the transition phase.
+10Base-T - An older Ethernet standard (IEEE 802.3i) that uses twisted-pair copper cable (Category 3 or better) and provides 10 Mbps half-duplex communication over a maximum segment length of 100 meters.
+100Base-TX - A Fast Ethernet standard (IEEE 802.3u) running at 100 Mbps over twisted-pair copper (Category 5 or better) with a maximum segment length of 100 meters.
+1000Base-T - A Gigabit Ethernet standard (IEEE 802.3ab) supporting 1 Gbps data rates over twisted-pair copper (Category 5e or higher) with a 100-meter maximum distance.
+1000Base-SX - A Gigabit Ethernet fiber standard (IEEE 802.3z) that uses multimode fiber and short wavelength (850 nm) optics for distances up to about 550 meters.
+1000Base-LX - A Gigabit Ethernet fiber standard (IEEE 802.3z) that uses single-mode fiber and long wavelength (1310 nm) optics for distances up to 5 km or more.
+1000Base-ZX - A Gigabit Ethernet standard using single-mode fiber and longer wavelength optics, typically reaching distances of up to 70 km.
+10GBase-T - A 10 Gigabit Ethernet standard (IEEE 802.3an) that runs over twisted-pair copper (Category 6a or better) with a maximum of 100 meters.
+10GBase-SR - A 10 Gigabit Ethernet fiber standard that uses multimode fiber with short reach (up to around 300 meters).
+10GBase-LR - A 10 Gigabit Ethernet standard for single-mode fiber using 1310 nm wavelength lasers, typically supporting distances up to 10 km.
+Single-Mode Fiber (SMF) - A fiber optic cable type with a small core diameter, allowing only one mode of light to propagate, typically used for long-distance, high-bandwidth communication.
+Multimode Fiber (MMF) - A fiber optic cable type with a larger core diameter, allowing multiple modes of light; suitable for shorter-distance network applications.
+SC Connector - A fiber optic connector with a square, push-pull latching design, commonly used in multimode and single-mode fiber installations.
+LC Connector - A smaller form-factor fiber optic connector that uses a latch, popular in modern Ethernet and Fibre Channel installations.
+ST Connector - A fiber optic connector with a bayonet mount, widely used in older fiber networks; requires quarter-turn to lock.
+MTRJ Connector - A fiber optic connector with a small form factor that pairs two fibers in a single rectangular connector, often used in LAN backbones.
+MPO/MTP Connector - A multi-fiber push-on connector that supports high-density fiber links, commonly used in data centers for 40/100 Gbps links.
+APC Connector (Angled Physical Contact) - A fiber connector type with an 8-degree angled end face to reduce back reflection and improve signal quality.
+UPC Connector (Ultra Physical Contact) - A fiber connector type with a more polished end face than standard PC connectors, resulting in lower back reflection.
+WDM (Wavelength Division Multiplexing) - A technique that multiplexes multiple optical carrier signals onto a single fiber by using different wavelengths (colors) of laser light.
+CWDM (Coarse Wavelength Division Multiplexing) - A form of WDM that uses fewer, more widely spaced wavelengths, providing a cost-effective method for increasing bandwidth over fiber.
+DWDM (Dense Wavelength Division Multiplexing) - A WDM technology with very closely spaced wavelengths, allowing a high number of channels and greater bandwidth over single-mode fiber.
+Category 3 Cable - An older UTP cable standard supporting up to 10 Mbps Ethernet over short distances.
+Category 5 Cable - UTP cable supporting up to 100 Mbps Ethernet and is the baseline for many older LANs.
+Category 5e Cable - An enhanced cable standard supporting 1000 Mbps (Gigabit) Ethernet over distances up to 100 meters.
+Category 6 Cable - A UTP cable standard supporting 1 Gbps up to 100 meters and improved crosstalk characteristics over Cat5e.
+Category 6a Cable - An augmented cable standard supporting 10 Gbps up to 100 meters, with tighter crosstalk and noise specifications.
+Category 7 Cable - A fully shielded twisted-pair cable capable of 10 Gbps speeds and improved noise resistance, often used in data centers.
+Coaxial Cable - A cable with an inner conductor, insulating layer, and outer conductive shield, used in older Ethernet standards like 10Base2 and 10Base5.
+10Base2 - A legacy Ethernet standard (Thinnet) using coaxial cable with a maximum segment length of 185 meters and BNC connectors.
+10Base5 - A legacy Ethernet standard (Thicknet) using thick coaxial cable segments up to 500 meters with AUI transceivers.
+Crossover Cable - A twisted-pair cable that has the transmit and receive wire pairs swapped on one end, used to connect similar devices directly without a switch in older setups.
+Straight-Through Cable - A standard twisted-pair cable where the wire pairs connect each pin on one end to the same pin at the other end, used to connect different network devices.
+Rollover Cable - A Cisco console cable that reverses all eight wires, commonly used to connect a PC’s serial port to a router or switch console port.
+EUI-64 - The method of generating a 64-bit IPv6 interface identifier from a 48-bit MAC address by inserting FFFE in the middle and flipping a specific bit.
+SLAAC-based EUI-64 - Using Stateless Address Autoconfiguration, the host automatically creates its IPv6 address by deriving the interface identifier via EUI-64 rules.
+IPv6 Link-Local Address Format - Addresses beginning with FE80::/10, used for local network segment communication and automatically assigned.
+IPv6 Unique Local Address - Addresses beginning with FC00::/7, used within an organization, not routable on the global internet.
+IPv6 Solicited-Node Multicast Address - A special multicast address (FF02::1:FFxx:xxxx) that corresponds to each IPv6 unicast or anycast address, used for neighbor discovery.
+IPv6 Anycast Address - An IPv6 address assigned to multiple interfaces, where packets are delivered to the "nearest" interface as determined by routing protocols.
+IPv6 Router Advertisement (RA) - Messages sent by routers to inform hosts about prefixes, lifetimes, and default gateways.
+IPv6 Router Solicitation (RS) - Messages sent by hosts to prompt routers to send an RA, helping hosts learn local network parameters.
+IPv6 Neighbor Discovery - A set of ICMPv6 messages (RA, RS, NA, NS) used to determine link-layer addresses, find routers, and maintain reachability information.
+IPv6 DAD (Duplicate Address Detection) - A mechanism to ensure no two hosts on the same link use the same IPv6 address.
+IPv6 Preferred and Deprecated Addresses - Terms describing the state of IPv6 addresses during their valid lifetimes; preferred addresses are actively used for new communications.
+IPv6 Global Routing Prefix - The initial bits of an IPv6 address that indicate the global network portion assigned by an ISP or RIR.
+IPv6 Interface Identifier (IID) - The host portion of an IPv6 address, typically 64 bits, that identifies a unique interface on a subnet.
+IPv6 Privacy Extension Addresses - Temporary addresses that frequently change to enhance user privacy and limit device tracking across networks.
+Teredo - An IPv6 transition technology that tunnels IPv6 packets over IPv4 UDP to traverse NAT devices.
+NAT64 - A mechanism to translate IPv6 packets to IPv4 packets and vice versa, enabling communication between IPv6-only and IPv4-only nodes.
+ISATAP (Intra-Site Automatic Tunnel Addressing Protocol) - An IPv6 transition mechanism that uses IPv4 as a virtual link-layer for IPv6.
+IEEE 802.3 - The base standard defining Ethernet LAN technology, including physical layer and MAC sublayer specifications.
+IEEE 802.11 - The family of standards defining wireless LAN networks (Wi-Fi), including various amendments for speed and security.
+IEEE 802.11a - A wireless LAN standard operating in the 5 GHz band, supporting data rates up to 54 Mbps.
+IEEE 802.11b - A wireless LAN standard using the 2.4 GHz band, with data rates up to 11 Mbps and wider adoption in early Wi-Fi networks.
+IEEE 802.11g - A wireless LAN standard at 2.4 GHz, backward compatible with 802.11b, offering speeds up to 54 Mbps.
+IEEE 802.11n - A WLAN standard using MIMO technology and operating in 2.4 or 5 GHz bands for speeds up to 600 Mbps.
+IEEE 802.11ac - A WLAN standard providing high throughput in the 5 GHz band, using wider channels and MIMO to achieve gigabit speeds.
+IEEE 802.11ax (Wi-Fi 6) - A WLAN standard improving efficiency, capacity, and performance in both 2.4 and 5 GHz bands, supporting OFDMA and MU-MIMO.
+IEEE 802.1Q - The VLAN tagging standard, allowing multiple VLANs to share a single physical link with frame tagging.
+IEEE 802.1ad (Q-in-Q) - An Ethernet standard that allows multiple VLAN tags to be inserted into frames, creating stacked VLANs often used by service providers.
+IEEE 802.1AX (Link Aggregation) - A standard defining link aggregation methods (LACP) to combine multiple physical links into one logical channel.
+IEEE 802.3af (PoE) - A standard providing Power over Ethernet, delivering up to 15.4 watts of DC power over twisted-pair Ethernet cabling.
+IEEE 802.3at (PoE+) - An enhanced PoE standard delivering up to 30 watts of power for devices requiring more energy than PoE.
+IEEE 802.3bt (4-Pair PoE) - A PoE standard allowing all four twisted pairs to deliver power, supporting up to 90 watts for high-power devices.
+IEEE 802.1X - A standard for port-based network access control, often used with RADIUS for authenticating devices before granting LAN access.
+IEEE 802.1AE (MACsec) - A standard for cryptographic security of Ethernet frames at the MAC layer, providing confidentiality and integrity.
+MDI (Media Dependent Interface) - An interface in Ethernet transceivers that defines the physical and electrical characteristics of the network medium.
+MDI-X - A port wiring configuration where transmit and receive pairs are swapped internally to avoid the need for crossover cables.
+RS-232 - A serial communication standard commonly used for console access to networking devices before USB and Ethernet-based management.
+V.35 Interface - A high-speed serial interface standard for routers connecting to WAN services such as leased lines.
+USB-to-Serial Adapter - A device that converts USB signals to serial (RS-232) signals, enabling modern computers to interface with older serial-only networking equipment.
+T568A Wiring Standard - An Ethernet cable pinout standard specifying the color order for twisted-pair termination in RJ45 connectors.
+T568B Wiring Standard - Another Ethernet cable pinout standard, differing slightly from T568A, commonly used in North America.
+Rollover (Console) Pinout - A cable pinout that reverses all eight wires, typically used to connect to Cisco console ports via RJ45 to serial.
+RSSI (Received Signal Strength Indicator) - A measure of the power present in a received radio signal, used in wireless networks to gauge signal quality.
+EIRP (Equivalent Isotropically Radiated Power) - The effective power radiated by an antenna, calculated from the transmitter power plus antenna gain minus any losses.
+Duplex Mismatch - A network issue where one end of a link is set to full-duplex and the other to half-duplex, causing collisions and poor performance.
+Attenuation - The weakening of a signal’s strength as it travels over a cable or through air, measured in decibels (dB).
+Crosstalk - Electromagnetic interference between adjacent wires in a cable, causing signal degradation.
+NEXT (Near-End Crosstalk) - Crosstalk measured at the same end of the cable as the transmitter, an important parameter in twisted-pair cable testing.
+FEXT (Far-End Crosstalk) - Crosstalk measured at the opposite end of the cable from the transmitter.
+BER (Bit Error Rate) - The rate at which errors occur in a transmitted bitstream over a communication channel.
+EMI (Electromagnetic Interference) - Interference caused by electromagnetic radiation from other devices or cables, affecting signal quality.
+RFI (Radio Frequency Interference) - Interference within the radio frequency spectrum that can degrade wireless and wired communication signals.
+Plenum Cable - Cable with fire-resistant insulation approved for use in the plenum spaces (air circulation areas) of buildings, reducing toxic fumes during a fire.
+Riser Cable - Cable rated for vertical riser spaces in a building, designed to self-extinguish and prevent fire propagation between floors.
+MDF (Main Distribution Frame) - The primary termination point for all outside services and internal cable distribution within a building.
+IDF (Intermediate Distribution Frame) - A secondary distribution point that connects internal segments to the MDF, typically on each floor or area of a building.
+Patch Panel - A board with multiple ports that facilitate cable management by allowing quick changes in connections via patch cords.
+Demarcation Point (Demarc) - The boundary between the service provider’s wiring and the customer’s internal network cabling.
+Ethernet Auto-Negotiation - A feature allowing Ethernet devices to automatically determine the best common speed and duplex mode for a link.
+Port Mirroring (SPAN) - A switch feature that copies traffic from specific ports to a designated monitoring port for analysis.
+LACP Fast/Slow Rates - Settings in link aggregation controlling how quickly LACP frames are sent to detect link failures (fast = 1s, slow = 30s intervals).
+IPv6 RA Guard - A security feature that inspects IPv6 router advertisement messages, preventing rogue RAs from manipulating host IPv6 configurations.
+DHCPv6 - The IPv6 equivalent of DHCP, allowing dynamic allocation of IPv6 addresses and configuration parameters.
+IPv6 Prefix Delegation - A mechanism where a network device (often a router) obtains a delegated prefix from an ISP to assign to internal networks.
+IPv6 MLD (Multicast Listener Discovery) - A protocol used by IPv6 devices to discover and report their interest in multicast addresses to local routers.
+FC (Fibre Channel) - A high-speed network technology used primarily for storage networks, often over fiber optic cables.
+FCoE (Fibre Channel over Ethernet) - A protocol encapsulating Fibre Channel frames over Ethernet networks, enabling LAN and SAN convergence.
+SAN (Storage Area Network) - A high-speed network that provides access to consolidated block-level data storage, separate from the LAN, often using fiber interconnects.
+Enter Global Configuration Mode - configure terminal
+Set Device Hostname - hostname Switch1
+Assign IP Address to an Interface - interface vlan 1 then ip address 192.168.1.1 255.255.255.0
+Enable an Interface - no shutdown
+Save Running Configuration to Startup Configuration - copy running-config startup-config
+View Running Configuration - show running-config
+View Startup Configuration - show startup-config
+Show Brief Interface Status - show ip interface brief
+Show Detailed Interface Information - show interface GigabitEthernet0/1
+Display IOS Version and System Info - show version
+Reload (Reboot) the Device - reload
+Configure a Static Route - ip route 10.0.0.0 255.0.0.0 192.168.1.2
+Enter Console Line Configuration Mode - line console 0
+Set Console Password - password cisco
+Set Enable (Privileged EXEC) Secret - enable secret cisco
+Create a Local Username and Password - username admin secret password123
+Generate RSA Keys for SSH - crypto key generate rsa
+Set the IP Domain Name for SSH - ip domain-name example.com
+Enable SSH on VTY Lines - line vty 0 4 then transport input ssh
+Create a VLAN - vlan 10 then name Sales
+Assign a Port to a VLAN - interface GigabitEthernet0/1 then switchport mode access and switchport access vlan 10
+Configure a Port as a Trunk - interface GigabitEthernet0/2 then switchport mode trunk
+Set VTP Mode - vtp mode server
+Configure VTP Domain Name - vtp domain Corp
+Configure EtherChannel (LACP) - interface GigabitEthernet0/3 then channel-group 1 mode active
+Set Default Gateway for Management - ip default-gateway 192.168.1.254
+Show CDP Neighbors - show cdp neighbors
+Disable CDP on an Interface - interface GigabitEthernet0/1 then no cdp enable
+Create a MOTD Banner - banner motd # Unauthorized access is prohibited! #
+Disable DNS Lookup - no ip domain-lookup
+Enter Privileged EXEC Mode - enable
+Show IP Routing Table - show ip route
+Configure NAT Inside Interface - interface GigabitEthernet0/1 then ip nat inside
+Configure NAT Outside Interface - interface GigabitEthernet0/2 then ip nat outside
+Configure PAT (NAT Overload) - ip nat inside source list 1 interface GigabitEthernet0/2 overload
+Create a Standard ACL - access-list 1 permit 192.168.1.0 0.0.0.255
+View All ACLs - show access-lists
+Set the System Clock - clock set 16:00:00 Dec 9 2024
+Save Configuration (Short Command) - wr (write memory)
+Display MAC Address Table - show mac address-table
+Clear Interface Counters - clear counters GigabitEthernet0/1
+Disable an Interface - shutdown
+Add a Description to an Interface - interface GigabitEthernet0/1 then description Uplink to Core Switch
+Show Port Security Information - show port-security
+Configure Port Security - switchport port-security then switchport port-security maximum 2 and switchport port-security violation shutdown
+Display ARP Table - show ip arp
+Show Logging Messages - show logging
+Configure an SNMP Community String - snmp-server community public RO
+Show Current User Sessions - show users
+Erase Startup Configuration - erase startup-config
