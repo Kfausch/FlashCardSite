@@ -1,36 +1,74 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* stack controls above flashcard */
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     background-color: #121212; /* Dark background */
     color: #e0e0e0; /* Light text color */
-}
-
-.flashcard-container {
-    width: 400px;  /* Increased width */
-    height: 300px; /* Increased height */
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .controls label,
+  .controls select {
+    font-size: 16px;
+    margin: 0 5px;
+    color: #e0e0e0;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .flashcard-container {
+    width: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #333; /* Darker border */
+    border: 1px solid #333;
     border-radius: 10px;
-    background-color: #1e1e1e; /* Slightly lighter dark background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     text-align: center;
-}
-
-.flashcard {
+    margin-bottom: 20px;
+  }
+  
+  .flashcard {
     font-size: 20px;
-    color: #e0e0e0; /* Light text color */
-    padding: 20px; /* Ensure the text has space inside the container */
-    text-align: center; /* Center the text */
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-buttons button {
+    font-size: 16px;
+    padding: 8px 12px;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background: #333;
+  }
+  
