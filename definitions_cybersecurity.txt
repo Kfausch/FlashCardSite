@@ -209,3 +209,18 @@ Wireless Security - The prevention of unauthorized access or damage to computers
 Worm - A type of malware that replicates itself and spreads to other computers without needing to attach itself to a host program.
 Zero Day Vulnerability - A software vulnerability that is unknown to the vendor and can be exploited by attackers before a patch is issued.
 Zero Trust Security Model - A security concept centered on the belief that organizations should not automatically trust anything inside or outside its perimeters and instead must verify anything and everything trying to connect to its systems before granting access.
+Hot Site - A fully operational offsite facility that is ready for immediate use after a disaster, equipped with hardware, software, and network connectivity
+Warm Site - A partially equipped disaster recovery facility that already has hardware and connectivity but needs additional resources or data to become fully operational
+RADIUS - A networking protocol that provides centralized Authentication, Authorization, and Accounting (AAA) for users who connect and use a network service
+TACACS+ - A Cisco proprietary protocol that provides AAA services, separating all three elements (Authentication, Authorization, Accounting) for more granular control
+PAP (Password Authentication Protocol) - An older, less secure authentication protocol that transmits passwords in plain text over the network
+Vishing - A social engineering attack similar to phishing that uses telephone calls or Voice over IP (VoIP) to trick victims into revealing personal or sensitive information
+Smishing - A form of phishing conducted via SMS text messages, where attackers attempt to entice recipients into clicking malicious links or revealing confidential data
+DNS Poisoning (DNS Cache Poisoning) - An attack technique that corrupts a DNS resolver’s cache records, redirecting traffic to malicious websites or IP addresses
+WPS Attack - An attack on Wi-Fi Protected Setup (WPS) that exploits design flaws (such as the PIN vulnerability) to gain unauthorized access to a wireless network
+Bluejacking - The sending of unsolicited messages to nearby Bluetooth devices, typically harmless but can be used as a distraction or annoyance
+Bluesnarfing - Unauthorized access of information from a wireless device (such as contact lists or messages) through a Bluetooth connection
+Mantrap - A physical security control composed of two interlocking doors, allowing only one door to open at a time, thereby controlling and monitoring access to a secure area
+Rainbow Table Attack - A password cracking method using precomputed hashes of common or possible passwords, significantly speeding up the process of reversing hashed passwords
+Birthday Attack - A cryptographic attack leveraging the mathematics behind the birthday paradox to find collisions in hash functions more quickly than brute force
+Advanced Persistent Threat (APT) - A stealthy threat actor, often state-sponsored, that gains unauthorized access to a network and remains undetected for an extended period to steal data or disrupt operations
