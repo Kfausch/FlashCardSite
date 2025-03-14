@@ -9,7 +9,7 @@ let showDefinition = false;
 const sets = [
   { name: "Cybersecurity Terms", file: "definitions_cybersecurity.txt" },
   { name: "Networking Terms", file: "definitions_networking.txt" },
-  { name: "Default Set", file: "SecurityAcronyms.txt" },
+  { name: "Security Acronyms", file: "SecurityAcronyms.txt" },
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
