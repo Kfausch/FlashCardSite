@@ -8,8 +8,10 @@ let showDefinition = false;
  */
 const sets = [
   { name: "Cybersecurity Terms", file: "definitions_cybersecurity.txt" },
-  { name: "Networking Terms", file: "definitions_networking.txt" },
   { name: "Security Acronyms", file: "SecurityAcronyms.txt" },
+  { name: "Security Acronyms", file: "CommonPorts.txt" },
+  { name: "Networking Terms", file: "definitions_networking.txt" },
+  
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
