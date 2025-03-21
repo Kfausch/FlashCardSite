@@ -1,0 +1,28 @@
+FTP - port 21 (TCP) used for transferring files between systems
+SSH, SCP, SFTP - port 22 (TCP) (SCP - Secure Copy functions) secure remote access and file transfers
+Telnet - port 23 (TCP) unencrypted text-based remote login
+SMTP - port 25 (TCP) used for sending emails
+DNS - port 53 (TCP/UDP) resolves domain names to IP addresses
+TFTP - port 69 (UDP) used as a lightweight file transfer method for sending config files or network booting of an OS
+HTTP - port 80 (TCP) used for unencrypted web browsing
+Kerberos - port 88 (UDP) network authentication protocol
+POP3 - port 110 (TCP) responsible for retrieving email from a server
+NNTP - port 119 (TCP) used for accessing newsgroups
+RPC - port 135 (TCP/UDP) Remote Procedure Call, facilitates communication between different system processes
+NetBIOS - port 137, 138, 139 (TCP/UDP) networking protocol suite for legacy Windows file/printer sharing
+IMAP - port 143 (TCP) allows access to email message on a server
+SNMP - port 161 (UDP) manages network devices
+SNMP Trap - port 162 (UDP) responsible for sending SNMP trap messages
+LDAP - port 389 (TCP) used for accessing and maintaining distributed directory services
+HTTPS - port 443 (TCP) used for secure web browsing
+SMB - port 445 (TCP) file and printer sharing 
+SMTPS - port 465, 587 (TCP) used for sending emails securely with SSL/TLS
+Syslog - port 514 (UDP) sending log messages
+LDAPS - port 636 (TCP) secure version of LDAP using SSL/TLS
+IMAPS - port 993 (TCP) secure version of IMAP
+POP3S - port 995 (TCP) secure version of POP3
+MS SQL - port 1433 (TCP) Microsoft SQL Server database communication
+RADIUS - port 1645, 1646 (TCP) remote authentication, authorization, and accounting
+RADIUS UDP - port 1812, 1813 (UDP) authentication and accounting as defined by the Internet Engineering Task Force (IETF)
+RDP - port 3389 (TCP) used for Remote Desktop Protocol connections
+Syslog TLS - port 6514 (TCP) secure transmission of syslog messages over TLS
