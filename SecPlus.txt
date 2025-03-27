@@ -13,3 +13,6 @@ Operational Control - Security training, incident response
 Managerial Control - Risk assessment, security policies, change management
 Physical Control - locks, fences, security guards
 OSI - phsyical (cables), data link (switch), network (routers), transport, session, presentation, application
+SQL Injection - '1'='1', ' DROP TABLE users; , (SELECT COUNT(*) FROM sysusers)
+XML Injection - <user><name>Bob</name><password>123&<isAdmin>1</isAdmin></password></user>
+Dictionary Travsersal - /../../../etc/passwd and /images/../../../../etc/shadow
