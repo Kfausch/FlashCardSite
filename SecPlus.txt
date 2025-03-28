@@ -16,3 +16,9 @@ OSI - phsyical (cables), data link (switch), network (routers), transport, sessi
 SQL Injection - '1'='1', ' DROP TABLE users; , (SELECT COUNT(*) FROM sysusers)
 XML Injection - <user><name>Bob</name><password>123&<isAdmin>1</isAdmin></password></user>
 Dictionary Travsersal - /../../../etc/passwd and /images/../../../../etc/shadow
+DAC - Discretionary Access Control (DAC) is an authorization model where the owner of the resource decides who is allowed to access it
+MAC - Mandatory Access Control (MAC) is an authorization model where access to resources is determined by a set of rules defined by a central authority
+ABAC - Attribute Based Access Control (ABAC) determines access through a combination of contexts and system wide attributes
+Data Controller - An individual or entity that determines the purposes and means of processing personal data. They have primary responsibility for ensuring the data's protection and compliance with privacy regulations (Determines purpose)
+Data Processor - The Data Processor processes data on behalf of the Data Controller, following the controller’s instructions (Preforms Procssing)
+Data Custodian - typically responsible for ensuring the safety and maintenance of data assets through its various stages of storage, but doesn't decide on processing methods (Manages infrastructure)
