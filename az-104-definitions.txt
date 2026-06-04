@@ -1,0 +1,91 @@
+Microsoft Entra ID - A cloud-based identity and access management (IAM) service that helps employees, partners, and customers securely access applications and resources.
+Tenant - Represents an organization's dedicated Entra ID instance.
+Domain - A logical network boundary for authentication.
+Domain Controller (DC) - Used in on-premises Active Directory, it authenticates users and authorizes access.
+Microsoft Entra Connect - Synchronizes on-premises Active Directory (AD) with Microsoft Entra ID.
+Conditional Access - Defines access policies based on user risk, device compliance, and location.
+Privileged Identity Management (PIM) - Manages and secures elevated administrator access to resources.
+Group Policy Objects (GPOs) - A virtual collection of policy settings used in on-prem AD for security and access control.
+Organizational Units (OUs) - Containers used in on-prem AD for grouping users, devices, and policies.
+Microsoft Entra ID Governance - Helps organizations manage the user lifecycle, access policies, and security.
+Password Hash Sync - Synchronizes hashed on-premises passwords to Entra ID.
+Pass-through Authentication - Verifies passwords against on-premises Active Directory without storing them in the cloud.
+Federation Integration - Enables single sign-on (SSO) using AD FS, SAML, or OAuth.
+Role-Based Access Control (RBAC) - Assigns roles and permissions to users to manage who has access to Azure resources.
+Standard Users - Users that belong natively to your organization.
+Guest Users - External users from another organization or external identity providers.
+Direct Assignment - Assigning a user directly to a resource.
+Group Assignment - Assigning a group to a resource, automatically granting access to all of its members.
+External Authority Assignment - Assigning access based on an external identity provider, such as an on-prem AD or partner organization.
+BuiltInRole - Managed Microsoft roles that are read-only and pre-created for you to use.
+CustomRole - A role created by you with your own custom access logic.
+Role Assignment - The process of applying a role, composed of a Security Principle, a Role Definition, and a Scope.
+Account Administrator - The billing owner of the subscription who has no direct access to the Azure portal.
+Service Administrator - A classic administrator role with the same access as a user assigned the Owner role at the subscription scope.
+Global Administrator - An Azure AD role that provides full access to everything.
+User Administrator - An Azure AD role with full access to create and manage users.
+Billing Administrator - An Azure AD role used to make purchases, manage subscriptions, and handle support tickets.
+Azure Policy - Enforces organizational standards and assesses compliance at-scale without actively restricting access.
+Policy Definition - A JSON file used to describe business rules to evaluate resource compliance.
+Policy Initiative - A collection of policy definitions grouped together.
+Azure Resource Manager (ARM) - A deployment and management service that allows you to create, update, and delete Azure resources, acting as a gatekeeper for requests.
+Management Groups - A logical grouping of multiple subscriptions used to manage access, policies, and compliance across them.
+Subscriptions - Grants you access to Azure services based on a billing and support agreement.
+Resource Groups - A logical container that holds related resources for an Azure solution.
+Resource Providers - A service that supplies Azure resources (e.g., Microsoft.Compute).
+Resource Tags - A key and value pair that you assign to Azure resources to help manage, organize, and track costs.
+Resource Locks - Prevents users from accidentally modifying or deleting critical resources at the Subscription, Resource Group, or Resource scope.
+Infrastructure As Code (IaC) - The process of managing and provisioning computer data centers through machine-readable definition files rather than manual configuration.
+Declarative IaC - Defining exactly what you want the final state to be, and the service provisions exactly that.
+Imperative IaC - Defining what you generally want, relying on the service to guess the correct configuration steps.
+General-purpose v2 (GPv2) - The current default and most flexible storage account type that supports Blob, File, Queue, Table, Disk, and Data Lake Storage Gen2.
+Azure Blob Storage - A massively scalable object store optimized for storing massive amounts of unstructured text and binary data.
+Azure Files - Fully managed file shares in the cloud accessible via standard SMB or NFS protocols.
+Azure Queues - A message queue service for storing large numbers of messages between application components.
+Azure Table - A NoSQL key-value store for semi-structured tabular data.
+Hot Access Tier - Storage tier for frequently accessed data with the highest storage cost but the lowest access cost.
+Cool Access Tier - Storage tier for infrequently accessed data, typically stored for at least 30 days.
+Archive Access Tier - Storage tier for rarely accessed data with the lowest storage cost but the highest access cost and delayed retrieval times.
+AzCopy - An easy-to-use command-line tool for Windows, Linux, and macOS used to copy blobs or files to or from a storage account.
+Azure Storage Explorer - A standalone GUI application that makes it easy to work with Azure Storage data.
+Azure Import/Export - A service for the secure offline transfer of large datasets by physically shipping disk drives to an Azure datacenter.
+Soft Delete - Protects against accidental deletions by retaining deleted files or shares for a user-defined retention period.
+Stored Access Policy - A policy created on a storage container to manage constraints separately from the SAS token itself.
+Secure Shell (SSH) - A network protocol used to connect securely to a Linux Virtual Machine via a terminal on Port 22.
+Remote Desktop Protocol (RDP) - A graphical interface used to remotely connect to a Windows Server Virtual Machine over a network connection.
+Azure Private Link - A service that establishes secure connections between Azure resources so traffic remains entirely within the Microsoft backbone network.
+Server-Side Encryption (SSE) - An encryption method enabled by default for all managed disks, snapshots, and images.
+Managed Disk Snapshot - A read-only, crash-consistent full copy of a managed disk stored as a standard managed disk.
+Standard HDD - Economical, reliable disk storage for sequential access and infrequent I/O, ideal for backups and archiving.
+Azure Scale Sets - A service that allows you to automatically increase or decrease your Virtual Machine capacity based on demand.
+Azure Application Gateway - An application-level routing and load balancing service that operates on OSI Layer 7.
+App Service Plan - Defines the compute resources, pricing tier, and capabilities allocated for an Azure App Service.
+Metrics - Numerical values collected at regular intervals that describe some aspect of a system at a particular time.
+Logs - A text file where each line contains event data about what happened within a system at a certain time.
+Traces - A history of a request as it travels through multiple apps or services, used to pinpoint performance bottlenecks or failures.
+Log Analytics Workspace - A unique environment for Azure Monitor log data containing its own data repository and configuration.
+Kusto Query Language (KQL) - A read-only request language used by Azure Monitor Logs to process data and return results.
+Application Insights - A feature of Azure Monitor that provides extensible application performance management (APM) and monitoring for live web apps.
+Azure Backup Service - A service that provides simple, secure, and cost-effective solutions to back up your data and recover it from the Azure cloud.
+Azure Site Recovery (ASR) - A hybrid backup solution for site-to-site recovery to ensure business continuity and disaster recovery (BCDR).
+Recovery Point Objective (RPO) - A measurement of how often you backup, representing the maximum amount of data loss you can tolerate.
+Recovery Time Objective (RTO) - A measurement of how quickly you need to recover a backup and restore services after experiencing a disaster.
+Azure Container Instances (ACI) - A fully managed Docker-as-a-Service that allows you to launch isolated containers without provisioning or managing virtual machines.
+Container Groups - A collection of containers that get scheduled on the same host machine and share a lifecycle, resources, local network, and storage volumes.
+Azure Container Registry (ACR) - A managed, private Docker registry service based on the open-source Docker Registry 2.0 used to store container images.
+ACR Tasks - A feature that allows you to automate OS and framework patching for your Docker containers by triggering automated builds.
+Azure DNS - A hosting service for DNS domains that provides name resolution using Microsoft Azure infrastructure.
+Record Set - A grouping of DNS records in Azure DNS, required even if a group only contains a single record.
+CNAME Record - A Canonical Name record that creates an alias from one domain name to another domain name.
+MX Record - Mail Exchange records that point to the specific mail servers responsible for handling emails.
+NS Record - Name Server records that identify multiple authoritative DNS servers for a domain.
+PTR Record - A Pointer record that points an IP address to a domain or host name, primarily used for reverse DNS lookups.
+SRV Record - A Service record used to identify computers that host specific network services, like Domain Controllers.
+Azure Alias Record - A DNS record that points directly to an Azure resource instead of to an IP or hostname to prevent dangling domains if the underlying IP changes.
+Route Table - A table of data stored in a router or network host that lists the paths to next network destinations.
+Address Space - A range of available IP addresses allocated for use within a specific Virtual Network (VNet).
+Subnet - A logical division of an address space that helps isolate and manage workloads within a network.
+Azure Firewall - A managed, cloud-based network security service that protects your Azure VNet resources as a fully stateful Firewall as a Service.
+Azure ExpressRoute - Creates private connections between Azure datacenters and your on-premises infrastructure without traversing the public internet.
+Virtual WAN - A centralized networking service that brings many networking, security, and routing functionalities (like branch connectivity and site-to-site VPNs) into a single operational interface.
+Network Watcher - A suite of tools provided to monitor, diagnose, view network metrics, and capture packet data for resources in an Azure VNet.

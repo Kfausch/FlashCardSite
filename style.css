@@ -1,74 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column; /* stack controls above flashcard */
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
-  }
-  
-  .controls {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .controls label,
-  .controls select {
-    font-size: 16px;
-    margin: 0 5px;
-    color: #e0e0e0;
-    background: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  .flashcard-container {
-    width: 400px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #333;
-    border-radius: 10px;
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .flashcard {
-    font-size: 20px;
-    color: #e0e0e0;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .nav-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .nav-buttons button {
-    font-size: 16px;
-    padding: 8px 12px;
-    background: #1e1e1e;
-    color: #e0e0e0;
-    border: 1px solid #333;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .nav-buttons button:hover {
-    background: #333;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls label,
+.controls select {
+  font-size: 16px;
+  margin: 0 5px;
+  color: #e0e0e0;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.flashcard-container {
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+  perspective: 1000px; /* Gives the 3D effect depth */
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flashcard.is-flipped {
+  transform: rotateX(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back of the flipped element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.front {
+  background-color: #1e1e1e;
+}
+
+.back {
+  background-color: #2a2a2a; /* Slightly lighter to distinguish the definition */
+  transform: rotateX(180deg);
+  color: #a4c8e1; /* Subtle color change for definitions */
+}
+
+.nav-buttons button {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.nav-buttons button:hover {
+  background-color: #333;
+}

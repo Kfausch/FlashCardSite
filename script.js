@@ -1,18 +1,17 @@
 let terms = [];
 let currentIndex = 0;
-let showDefinition = false;
+let isFlipped = false;
 
 /**
  * Configure your sets here.
- * Each object has a name (for display) and a file (the TXT file to fetch).
  */
 const sets = [
+  { name: "AZ-104 Azure Administrator", file: "az-104-definitions.txt" },
   { name: "Cybersecurity Terms", file: "definitions_cybersecurity.txt" },
   { name: "Security Acronyms", file: "SecurityAcronyms.txt" },
   { name: "Security+", file: "SecPlus.txt" },
   { name: "Common Ports", file: "CommonPorts.txt" },
-  { name: "Networking Terms", file: "definitions_networking.txt" },
-  
+  { name: "Networking Terms", file: "definitions_networking.txt" }
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -36,25 +35,23 @@ window.addEventListener('DOMContentLoaded', () => {
     loadDefinitions(setSelect.value);
   });
 
+  // Flip on click
   flashcard.addEventListener('click', () => {
-    if (showDefinition) {
-      // If we're showing definition, move to the next card on click
-      currentIndex = (currentIndex + 1) % terms.length;
-      displayTerm();
-    } else {
-      // If we're showing term, show definition
-      displayDefinition();
+    toggleFlip();
+  });
+
+  // Next/Prev Buttons
+  prevBtn.addEventListener('click', () => navigate(-1));
+  nextBtn.addEventListener('click', () => navigate(1));
+
+  // Keyboard accessibility
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') navigate(-1);
+    else if (e.key === 'ArrowRight') navigate(1);
+    else if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault(); // Prevent page scroll on spacebar
+      toggleFlip();
     }
-  });
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + terms.length) % terms.length;
-    displayTerm();
-  });
-
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % terms.length;
-    displayTerm();
   });
 });
 
@@ -62,40 +59,64 @@ function loadDefinitions(file) {
   fetch(file)
     .then(response => response.text())
     .then(data => {
-      // Parse the file
+      // Parse the file and filter out empty lines
       terms = data.split('\n')
         .map(line => {
           const parts = line.split(' - ');
-          if (parts.length === 2) {
-            return { term: parts[0].trim(), definition: parts[1].trim() };
+          if (parts.length >= 2) {
+            // Join back in case the definition itself contains ' - '
+            const term = parts[0].trim();
+            const definition = parts.slice(1).join(' - ').trim();
+            return { term, definition };
           }
         })
         .filter(item => item !== undefined);
 
       currentIndex = 0;
-      displayTerm();
+      updateCardContent();
     })
     .catch(error => {
       console.error('Error loading definitions:', error);
-      const flashcard = document.getElementById('flashcard');
-      flashcard.textContent = 'Failed to load terms.';
+      document.getElementById('card-front').textContent = 'Failed to load terms.';
+      document.getElementById('card-back').textContent = 'Please check file path.';
     });
 }
 
-function displayTerm() {
+function updateCardContent() {
+  const front = document.getElementById('card-front');
+  const back = document.getElementById('card-back');
   const flashcard = document.getElementById('flashcard');
-  if (terms[currentIndex]) {
-    flashcard.textContent = terms[currentIndex].term;
-    showDefinition = false;
+  
+  // Ensure the card faces front when moving to a new term
+  flashcard.classList.remove('is-flipped');
+  isFlipped = false;
+
+  if (terms.length > 0 && terms[currentIndex]) {
+    front.textContent = terms[currentIndex].term;
+    // Wait briefly for the flip animation to finish before updating back text to prevent text flashing
+    setTimeout(() => {
+        back.textContent = terms[currentIndex].definition;
+    }, 150); 
   } else {
-    flashcard.textContent = 'No terms available.';
+    front.textContent = 'No terms found in file.';
+    back.textContent = '';
   }
 }
 
-function displayDefinition() {
+function toggleFlip() {
   const flashcard = document.getElementById('flashcard');
-  if (terms[currentIndex]) {
-    flashcard.textContent = terms[currentIndex].definition;
-    showDefinition = true;
+  if (terms.length === 0) return;
+  
+  isFlipped = !isFlipped;
+  if (isFlipped) {
+    flashcard.classList.add('is-flipped');
+  } else {
+    flashcard.classList.remove('is-flipped');
   }
+}
+
+function navigate(direction) {
+  if (terms.length === 0) return;
+  currentIndex = (currentIndex + direction + terms.length) % terms.length;
+  updateCardContent();
 }

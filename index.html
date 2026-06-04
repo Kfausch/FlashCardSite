@@ -8,17 +8,18 @@
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-  <!-- Dropdown to select different definition sets -->
   <div class="controls">
     <label for="setSelect">Select a Deck:</label>
     <select id="setSelect"></select>
   </div>
 
   <div class="flashcard-container">
-    <div id="flashcard" class="flashcard">Click to reveal definition</div>
+    <div id="flashcard" class="flashcard">
+      <div class="card-face front" id="card-front">Loading...</div>
+      <div class="card-face back" id="card-back"></div>
+    </div>
   </div>
 
-  <!-- Navigation buttons -->
   <div class="nav-buttons">
     <button id="prevBtn">Previous Term</button>
     <button id="nextBtn">Next Term</button>
